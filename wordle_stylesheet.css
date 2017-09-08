@@ -17,8 +17,9 @@ h3{
 	border: 1px solid #D62929;
 	border-radius: 10px;
 	box-shadow: 0 0 5px rgb(0,0,0,.5);
-	min-height: 195px;
+	min-height: 150px;
 	min-width: 450px;
+	/* overflow: auto; */
 }
 .selectiongroup{
 	margin-left: 10px;
@@ -82,4 +83,7 @@ h3{
 }
 .step2buttons{
 	margin-top: 10px;
+}
+#ignored{
+	max-width: 500px;
 }
