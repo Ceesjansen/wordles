@@ -165,17 +165,16 @@ function makeWordCloud(canvas) {
     list: cloud,
     rotateRatio: 0, // Odds of word rotation
     fontFamily: 'Raleway', // CSS font
-    fontWeight: 'bold',
     gridSize: 7, // Spacing between words
     ellipticity: 0.4, // Higher = rounder
-    minSize: 4, // Minimum pixel size for a word
+    minSize: 6, // Minimum pixel size for a word
     origin: [450, 150], // Starting point in the canvas element
     shape: 'cardioid', // Kidney-shaped
     shuffle: true,
     drawOutOfBound: false, // Permission to go over the edge
     backgroundColor: 'transparent',
     color: () => getRandomColor(document.getElementById('colortype').value),
-    weightFactor: (size) => (((size * 200) / 2500) * size + size) * scale,
+    weightFactor: (size) => (((size * 175) / 2500) * size + size) * scale,
     // Based on a max initial size of 50, this makes differences more extreme.
     // Returns max double the size.
     click: (item) => {
