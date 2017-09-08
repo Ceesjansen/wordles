@@ -59,9 +59,9 @@ function showSelections(selection) {
   const keys = Object.keys(selection);
   keys.map((key,j) => {
     let html = `<div class="btn-group selectiongroup"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ><h4>${key}</h4></button>
-    <ul id="list${j}" class="dropdown-menu"><li><label class="btn btn-primary" for="${j}-check99"><input type="checkbox" id="${j}-check99" value="99" autocomplete="off"> Geen selectie</label><br></li>`;
+    <ul id="list${j}" class="dropdown-menu"><li><label class="btn btn-primary category-label" for="${j}-check99"><input class="categorybtn" type="checkbox" id="${j}-check99" value="99" autocomplete="off"> Geen selectie</label><br></li>`;
     selection[key].map((val,i) => {
-      html+= `<li id="li${i}-${j}"><label class="btn btn-primary" for="check${i}-${j}"><input type="checkbox" id="check${i}-${j}" value=${i} autocomplete="off"> ${val}</label><br></li>`;
+      html+= `<li id="li${i}-${j}"><label class="btn btn-primary category-label" for="check${i}-${j}"><input class="categorybtn" type="checkbox" id="check${i}-${j}" value=${i} autocomplete="off"> ${val}</label><br></li>`;
     });
     html+=`</ul></div>`;
     $("#selection").append(html);
