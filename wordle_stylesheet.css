@@ -21,15 +21,19 @@ h3{
 	min-width: 450px;
 }
 .selectiongroup{
-	margin-left: 20px;
+	margin-left: 10px;
+}
+ .selectiongroup ul{
+	overflow: hidden;
+
+} 
+.dropdown-menu{
+	width: max-content !important; 
 }
 .selectiongroup ul li .btn{
-	width: 95%;
-	text-align: center;
+	text-align: left;
 }
-.btn{
-	margin: 5px;
-}
+
 .changeword{
 	position: relative;
 }
@@ -41,7 +45,19 @@ h3{
 .wordlebtn{
 	margin-top: 10px; 
 }
-
+.categorybtn{
+	text-align: left;
+	float: left;
+	margin-right: 5px !important;	
+	margin-left: 5px !important;
+}
+.category-label{
+	color: black;
+	background-color: #FFF;
+	 width: 100%; 
+	border-color: #FFF;
+	padding: 3px;
+}
  #association-container{
 	height: 480px;
 } 
@@ -60,4 +76,7 @@ h3{
 #wordle-container{
 	max-height: 450px;
 	max-width: 900px;
+}
+#wordnumber{
+	max-width: 500px;
 }
