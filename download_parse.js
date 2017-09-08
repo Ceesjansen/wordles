@@ -78,7 +78,7 @@ function downloadCsv(options){
   var pom = document.createElement('a');
   var url = URL.createObjectURL(blob);
   pom.href = url;
-  pom.setAttribute('download', 'test.csv');
+  pom.setAttribute('download', 'wordledata.csv');
   pom.click();
 }
 
