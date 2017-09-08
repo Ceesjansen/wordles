@@ -174,7 +174,7 @@ function makeWordCloud(canvas) {
     drawOutOfBound: false, // Permission to go over the edge
     backgroundColor: 'transparent',
     color: () => getRandomColor(document.getElementById('colortype').value),
-    weightFactor: (size) => (((size * 50) / 2500) * size + size) * scale,
+    weightFactor: (size) => (((size * 200) / 2500) * size + size) * scale,
     // Based on a max initial size of 50, this makes differences more extreme.
     // Returns max double the size.
     click: (item) => {
