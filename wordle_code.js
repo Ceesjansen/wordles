@@ -165,10 +165,11 @@ function makeWordCloud(canvas) {
     list: cloud,
     rotateRatio: 0, // Odds of word rotation
     fontFamily: 'Raleway', // CSS font
+    fontWeight: 'bold',
     gridSize: 7, // Spacing between words
     ellipticity: 0.4, // Higher = rounder
     minSize: 4, // Minimum pixel size for a word
-    origin: [250, 150], // Starting point in the canvas element
+    origin: [450, 150], // Starting point in the canvas element
     shape: 'cardioid', // Kidney-shaped
     shuffle: true,
     drawOutOfBound: false, // Permission to go over the edge
