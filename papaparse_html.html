@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <form class="form-inline">
               <div class="form-group">
                 <h3> Step 1: </h3>
@@ -43,6 +43,8 @@
             <h3> Step 2: </h3> 
             <h4>Please select your preferred output options by clicking the buttons below: </h4>
             <div id="selection"></div>
+          </div>
+          <div class="col-md-4">
              <h3> Step 3:</h3>
              <h4>Made your selections? Please confirm by clicking the button below</h4>
               <button class="btn btn-info" id="check">Confirm Selection</button>
@@ -62,13 +64,13 @@
                 <a href="#"  class="btn btn-danger" id="downloadbtn"> Download(.csv)</a>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 wordlebtn">
+          </div>
+          <div class="row">
+            <div class="col-md-4">
                 <h3>(Optional) Step 6:</h3>
                 <h4>Choose specific wordle options to get the worlde you prefer</h4>
                   <label for="wordnumber">Number of words:&nbsp;</label><input type="text" value="50" id="wordnumber"></input>
-              </div>
-            </div>
+              
             <div class="row">
               <div class="col-md-12 wordlebtn">
                 <div class="form form-inline" data-toggle="tooltip" title="" data-placement="top" data-original-title="Pick a language to remove common words from the wordle.">
@@ -99,9 +101,10 @@
             <div class="row">
               <div class="col-md-12 wordlebtn">
                 <div class="form form-inline" data-toggle="tooltip" title="" data-placement="top" data-original-title="Be advised, high settings may cause words to fall outside of the wordle (please check on lower settings to be safe)">
-          <label for="scalefactor">Scale:</label> <input type="text" name="scalefactor" id="scalefactor" value="225" class="form-control" style="width:50%;" onchange="makeWordCloud('wordleOutput')"> %</div>
-              </div>
-            </div>      
+                  <label for="scalefactor">Scale:</label> <input type="text" name="scalefactor" id="scalefactor" value="225" class="form-control" style="width:50%;" onchange="makeWordCloud('wordleOutput')"> %
+                </div>
+                </div>
+              </div>    
             <div class="row">
               <div class="col-md-12 wordlebtn">
                 <input type="text" name="ignored" id="ignored" placeholder="Ignored words (comma seperated)" class="form-control" onchange="makeWordCloud('wordleOutput')" data-toggle="tooltip" title="" data-placement="top" data-original-title="Place your words here that need to be filtered out of the wordle (seperate with comma)">
@@ -109,8 +112,8 @@
             </div>
             <div class="row changeword">
               <div class="col-md-10 wordlebtn changeword">
-              <h3>(Optional) Step 7:</h3>
-              <h4>Change multiple words to one word </h4>
+                <h3>(Optional) Step 7:</h3>
+                <h4>Change multiple words to one word </h4>
                 <input type="text" name="replace" id="replacewords" placeholder="Words you wish to replace (whitespace seperated)" class="form-control">
                 <input type="text" name="replaced" id="replaced" placeholder="Enter word you want it to be changed in to (1 word)" class="form-control">
               </div>
@@ -118,27 +121,28 @@
                 <button class="btn btn-primary" id="changewords">Change words</button>
               </div>
             </div>
-            <div id="output"> 
-              </div>
-              </div>
-              <!-- <div class="col-md-4">Stories
-                <div class="output-containers" id="story-container">
-                </div> 
-              </div> -->
-              <div class="col-md-3">Associations 
-                <div class="output-containers">
-                <textarea  class="form-control" id="association-container" autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></textarea>
-                </div>
-              </div>
-              <div id="error" class="alert alert-danger" role="alert" style="display:none"><strong>Red alert!</strong> Some words are removed from the wordle! Please adjust the scale or proceed with caution.</div>
-              <div class="col-md-6">Wordles
-                <div class="output-containers" id="wordle-container">
-                  <canvas id="wordle-canvas" width="900" height="450">
-                  </canvas>
-                </div>
-              </div>
-            </div>
+          </div>
         </div>
+        <div id="output"> 
+        </div>
+        <div class="row">
+          <div class="col-md-6">Associations 
+            <div class="output-containers">
+              <textarea  class="form-control" id="association-container" autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></textarea>
+            </div>
+          </div>
+          <div id="error" class="alert alert-danger" role="alert" style="display:none"><strong>Red alert!</strong> Some words are removed from the wordle! Please adjust the scale or proceed with caution.
+          </div>
+          <div class="col-md-6">Wordles
+            <div class="output-containers" id="wordle-container">
+              <canvas id="wordle-canvas" width="900" height="450">
+              </canvas>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  
 <script type="text/javascript" src="upload_papaparse_v2.js"></script>
 <script type="text/javascript" src="text_cleanup.js"></script>
 <script type="text/javascript" src="parse_click_functions.js"></script>
