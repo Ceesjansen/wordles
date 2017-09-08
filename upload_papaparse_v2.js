@@ -38,6 +38,8 @@ function extractKeyValues(data) {
   let keys = Object.keys(data[0]).filter((val) => val !== "");
   if (keys.length > 1){
   keys = keys.slice(1,keys.length);
+  }else{
+    return keys;
   }
   // Create global object to hold the selection
   let selection = {};
@@ -57,6 +59,7 @@ function extractKeyValues(data) {
 function showSelections(selection) {
   $('.selectiongroup').html('');
   const keys = Object.keys(selection);
+  if(keys.length > 1){
   keys.map((key,j) => {
     let html = `<div class="btn-group selectiongroup"><button type="button" class="btn btn-default dropdown-toggle step2buttons" data-toggle="dropdown" ><h4>${key}</h4></button>
     <ul id="list${j}" class="dropdown-menu"><li><label class="btn btn-primary category-label" for="${j}-check99"><input class="categorybtn" type="checkbox" id="${j}-check99" value="99" autocomplete="off"> Geen selectie</label><br></li>`;
@@ -66,6 +69,7 @@ function showSelections(selection) {
     html+=`</ul></div>`;
     $("#selection").append(html);
   });
+  }
 }
 
 // Filters data object based on user selection
