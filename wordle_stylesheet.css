@@ -12,12 +12,12 @@ body::-webkit-scrollbar-track
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
-/* h2{
+h2{
 	text-align: center;
-} */
-h3{
-	color: #D62929;
 }
+/* h3{
+	color: #D62929;
+} */
 #selection{
 	border: 1px solid #D62929;
 	border-radius: 10px;
