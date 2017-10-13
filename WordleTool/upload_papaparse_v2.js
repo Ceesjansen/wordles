@@ -42,7 +42,7 @@ function extractKeyValues(data) {
 
 // Output checkboxes for user selection
 function showSelections(selection) {
-  $('#selection').html('');
+  $('.selectiongroup').html('');
   const keys = Object.keys(selection);
   if(keys.length > 1){
   keys.map((key,j) => {

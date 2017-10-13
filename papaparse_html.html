@@ -4,14 +4,15 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="wordle_stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="loading.js"></script>
 <link href="loading.css" rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="papaparse.min.js"></script>
+
 <script type="text/javascript" src="wordcloud2.js"></script> 
-<script type="text/javascript" src="sentimood_dutch.js"></script> 
-<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+<!-- <script type="text/javascript" src="sentimood_dutch.js"></script>  -->
 <!-- <script type="text/javascript" src="typo.js"></script> -->
   </head>
     
@@ -127,7 +128,7 @@
         <div id="output"> 
         </div>
         <div class="row">
-          <div class="col-md-6">Associations 
+          <div class="col-md-6" id="percentage"> 
             <div class="output-containers">
               <textarea  class="form-control" id="association-container" autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></textarea>
             </div>
@@ -148,44 +149,9 @@
 <script type="text/javascript" src="text_cleanup.js"></script>
 <script type="text/javascript" src="parse_click_functions.js"></script>
 <script type="text/javascript" src="download_parse.js"></script>
-<script type="text/javascript" src="spellcheck.js"></script>
+<!-- <script type="text/javascript" src="spellcheck.js"></script> -->
 <script type="text/javascript" src="wordle_code.js"></script>
 
   </body>
 
 </html>
-
-<!-- 
-            <div class="wordle-button-container">
-              <div class="wordle-buttons" > Select desired output:
-                <div class="btn-group" id="output-button">
-                  <button id="return-choice-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Wordle Selection <span class="caret"></span>
-                  </button>
-                  <ul id="return-choice" class="dropdown-menu">
-                  </ul>
-              </div>
-            </div>
-                <div class="wordle-buttons" > Select category:
-                  <div class="btn-group" id="category-button">
-                    <button id="add-categories-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Category <span class="caret"></span>
-                    </button>
-                    <ul id="add-categories" class="dropdown-menu">
-                      <button type="submit" id="submit-file" class="btn btn-primary">confirm</button>
-                    </ul>
-                  </div>
-               </div>
-              <div class="wordle-buttons"> select category-value (optional): 
-                <div class="btn-group" id="value-button">
-                  <button id="category-value-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Category-value
-                  <span class="caret"></span>
-                  </button>
-                  <ul id="category-value" class="dropdown-menu">
-                    <button type="submit" id="submit-file" class="btn btn-primary">confirm</button>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>       -->
